@@ -15,7 +15,7 @@ public class ClubeController {
         return  Collections.emptyList();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public Clube findById(@PathVariable Long id){
         return null;
     }
@@ -25,7 +25,7 @@ public class ClubeController {
         return clube;
     }
 
-    @PutMapping("{/id}")
+    @PutMapping("/{id}")
     public Clube updateClube(@PathVariable Long id,
                                            @RequestBody Clube clube){
         return clube;

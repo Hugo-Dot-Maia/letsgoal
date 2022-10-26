@@ -14,7 +14,7 @@ public class EscudoController {
         return  Collections.emptyList();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public Escudo findById(@PathVariable Long id){
         return null;
     }
@@ -24,7 +24,7 @@ public class EscudoController {
         return escudo;
     }
 
-    @PutMapping("{/id}")
+    @PutMapping("/{id}")
     public Escudo updateEscudo(@PathVariable Long id,
                              @RequestBody Escudo escudo){
         return escudo;

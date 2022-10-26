@@ -15,7 +15,7 @@ public class FormacaoController {
         return Collections.emptyList();
     }
 
-    @GetMapping("{/id}")
+    @GetMapping("/{id}")
     public Formacao findById(@RequestParam Long id){
         return null;
     }

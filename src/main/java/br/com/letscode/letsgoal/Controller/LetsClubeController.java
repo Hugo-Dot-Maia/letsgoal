@@ -14,7 +14,7 @@ public class LetsClubeController {
         return  Collections.emptyList();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public LetsClube findById(@PathVariable Long id){
         return null;
     }
@@ -24,7 +24,7 @@ public class LetsClubeController {
         return letsClube;
     }
 
-    @PutMapping("{/id}")
+    @PutMapping("/{id}")
     public LetsClube updateLetsClube(@PathVariable Long id,
                                @RequestBody LetsClube letsClube){
         return letsClube;

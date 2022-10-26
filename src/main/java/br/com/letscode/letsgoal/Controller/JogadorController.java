@@ -15,7 +15,7 @@ public class JogadorController {
         return  Collections.emptyList();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public Jogador findById(@PathVariable Long id){
         return null;
     }
@@ -25,7 +25,7 @@ public class JogadorController {
         return jogador;
     }
 
-    @PutMapping("{/id}")
+    @PutMapping("/{id}")
     public Jogador updateClube(@PathVariable Long id,
                              @RequestBody Jogador jogador){
         return jogador;
