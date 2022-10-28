@@ -1,8 +1,10 @@
 package br.com.letscode.letsgoal.Controller;
 
 import br.com.letscode.letsgoal.Model.Patrocinador;
+import br.com.letscode.letsgoal.Service.PatrocinadorService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
@@ -12,12 +14,19 @@ import java.util.List;
 @RequestMapping("/patrocinadores")
 public class PatrocinadorController {
 
+    //region Logs
     Logger logger = LoggerFactory.getLogger(PatrocinadorController.class);
+    //endregion
+
+    //region Service
+    @Autowired
+    PatrocinadorService patrocinadorService;
+    //endregion
 
     @GetMapping("/todosPatrocinadores")
     public List<Patrocinador> findAll() {
        logger.info("Entrou no processo de obter todos os patrocinadores");
-        return  Collections.emptyList();
+        return  patrocinadorService.findAll();
     }
 
     @GetMapping("/{id}")
@@ -29,7 +38,7 @@ public class PatrocinadorController {
     @PostMapping
     public Patrocinador savePatrocinador(@RequestBody Patrocinador patrocinador){
         logger.info("Entrou no processo de salvar patrocinador");
-        return patrocinador;
+        return patrocinadorService.savePatrocinador(patrocinador);
     }
 
     @PutMapping("/{id}")
