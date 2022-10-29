@@ -1,7 +1,8 @@
 package br.com.letscode.letsgoal.Controller;
 
-import br.com.letscode.letsgoal.Model.Patrocinador;
-import br.com.letscode.letsgoal.Service.PatrocinadorService;
+import br.com.letscode.letsgoal.Iservice.Patrocinador.IPatrocinadorService;
+import br.com.letscode.letsgoal.Model.Patrocinador.Patrocinador;
+import br.com.letscode.letsgoal.Model.Patrocinador.PatrocinadorFiltro;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,14 +15,13 @@ import java.util.List;
 @RequestMapping("/patrocinadores")
 public class PatrocinadorController {
 
-    //region Logs
     Logger logger = LoggerFactory.getLogger(PatrocinadorController.class);
-    //endregion
+    final IPatrocinadorService patrocinadorService;
 
-    //region Service
     @Autowired
-    PatrocinadorService patrocinadorService;
-    //endregion
+    public PatrocinadorController(IPatrocinadorService patrocinadorService) {
+        this.patrocinadorService = patrocinadorService;
+    }
 
     @GetMapping("/todosPatrocinadores")
     public List<Patrocinador> findAll() {
@@ -33,6 +33,11 @@ public class PatrocinadorController {
     public Patrocinador findById(@PathVariable Long id){
         logger.info("Entrou no processo de obter patrocinador específico");
         return patrocinadorService.findById(id);
+    }
+    @GetMapping("/patrocinadoresFiltro")
+    public List<PatrocinadorFiltro> fildAllPatrocinadorFiltro(){
+        logger.info("Entrou no processo de obter todos os itens de filtro Patrocinadores");
+        return patrocinadorService.fildAllPatrocinadorFiltro();
     }
 
     @PostMapping
