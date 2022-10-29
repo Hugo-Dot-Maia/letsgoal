@@ -32,7 +32,7 @@ public class PatrocinadorController {
     @GetMapping("/{id}")
     public Patrocinador findById(@PathVariable Long id){
         logger.info("Entrou no processo de obter patrocinador específico");
-        return null;
+        return patrocinadorService.findById(id);
     }
 
     @PostMapping

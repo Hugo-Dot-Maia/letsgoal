@@ -1,5 +1,6 @@
 package br.com.letscode.letsgoal.Service;
 
+import br.com.letscode.letsgoal.Exception.PatrocinadorNotFoundException;
 import br.com.letscode.letsgoal.Model.Patrocinador;
 import br.com.letscode.letsgoal.Repository.PatrocinadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,5 +18,11 @@ public class PatrocinadorService {
     }
     public List<Patrocinador> findAll(){
         return patrocinadorRepository.findAll();
+    }
+
+    public Patrocinador findById(Long id){
+        return  patrocinadorRepository
+                .findById(id)
+                .orElseThrow(PatrocinadorNotFoundException::new);
     }
 }
