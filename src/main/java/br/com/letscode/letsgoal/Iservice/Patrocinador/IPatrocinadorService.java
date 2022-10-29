@@ -10,5 +10,6 @@ public interface IPatrocinadorService {
     List<Patrocinador> findAll();
     Patrocinador findById(Long id);
     List<PatrocinadorFiltro> fildAllPatrocinadorFiltro();
+    Patrocinador updatePatrocinador(Long id, Patrocinador patrocinador);
 
 }

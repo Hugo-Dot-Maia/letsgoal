@@ -5,6 +5,7 @@ import br.com.letscode.letsgoal.Iservice.Patrocinador.IPatrocinadorService;
 import br.com.letscode.letsgoal.Model.Patrocinador.Patrocinador;
 import br.com.letscode.letsgoal.Model.Patrocinador.PatrocinadorFiltro;
 import br.com.letscode.letsgoal.Repository.PatrocinadorRepository;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +13,11 @@ import java.util.List;
 
 @Service
 public class PatrocinadorService implements IPatrocinadorService {
+    private final PatrocinadorRepository patrocinadorRepository;
     @Autowired
-    PatrocinadorRepository patrocinadorRepository;
+    public PatrocinadorService(PatrocinadorRepository patrocinadorRepository) {
+        this.patrocinadorRepository = patrocinadorRepository;
+    }
 
     public Patrocinador savePatrocinador(Patrocinador patrocinador){
         return patrocinadorRepository.save(patrocinador);
@@ -34,5 +38,13 @@ public class PatrocinadorService implements IPatrocinadorService {
                 .stream()
                 .map(p -> new PatrocinadorFiltro(p.getID(), p.getNome()))
                 .toList();
+    }
+
+    public Patrocinador updatePatrocinador(Long id, Patrocinador patrocinador) {
+        var patrocinadorAtual = patrocinadorRepository.findById(id);
+        if(patrocinadorAtual.isEmpty())
+            return new Patrocinador();
+        BeanUtils.copyProperties(patrocinador, patrocinadorAtual);
+        return patrocinadorRepository.save(patrocinadorAtual.get());
     }
 }

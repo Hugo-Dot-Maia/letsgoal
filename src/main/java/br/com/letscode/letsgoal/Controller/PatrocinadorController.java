@@ -8,16 +8,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
 import java.util.List;
 
 @RestController
 @RequestMapping("/patrocinadores")
 public class PatrocinadorController {
 
-    Logger logger = LoggerFactory.getLogger(PatrocinadorController.class);
-    final IPatrocinadorService patrocinadorService;
-
+    //region Propriedades
+    private final Logger logger = LoggerFactory.getLogger(PatrocinadorController.class);
+    private final IPatrocinadorService patrocinadorService;
+    //endregion
     @Autowired
     public PatrocinadorController(IPatrocinadorService patrocinadorService) {
         this.patrocinadorService = patrocinadorService;
@@ -50,6 +50,6 @@ public class PatrocinadorController {
     public Patrocinador updatePatrocinador(@PathVariable Long id,
                                            @RequestBody Patrocinador patrocinador){
         logger.info("Entrou no processo de dar update em patrocinador");
-        return patrocinador;
+        return patrocinadorService.updatePatrocinador(id, patrocinador);
     }
 }
