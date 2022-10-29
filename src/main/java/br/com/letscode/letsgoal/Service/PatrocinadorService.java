@@ -1,7 +1,7 @@
 package br.com.letscode.letsgoal.Service;
 
 import br.com.letscode.letsgoal.Exception.PatrocinadorNotFoundException;
-import br.com.letscode.letsgoal.Iservice.Patrocinador.IPatrocinadorService;
+import br.com.letscode.letsgoal.Iservice.IPatrocinadorService;
 import br.com.letscode.letsgoal.Model.Patrocinador.Patrocinador;
 import br.com.letscode.letsgoal.Model.Patrocinador.PatrocinadorFiltro;
 import br.com.letscode.letsgoal.Repository.PatrocinadorRepository;

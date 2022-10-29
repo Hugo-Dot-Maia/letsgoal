@@ -1,5 +1,6 @@
 package br.com.letscode.letsgoal.Model;
 
+import br.com.letscode.letsgoal.Model.Jogador.Jogador;
 import lombok.Data;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package br.com.letscode.letsgoal.Iservice.Patrocinador;
+package br.com.letscode.letsgoal.Iservice;
 
 import br.com.letscode.letsgoal.Model.Patrocinador.Patrocinador;
 import br.com.letscode.letsgoal.Model.Patrocinador.PatrocinadorFiltro;

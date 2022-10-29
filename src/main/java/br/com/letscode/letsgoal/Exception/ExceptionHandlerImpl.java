@@ -26,6 +26,12 @@ public class ExceptionHandlerImpl {
         return ResponseEntity.notFound().build();
     }
 
+    @ExceptionHandler(JogadorNotFoundException.class)
+    public ResponseEntity<String> handleJogadorNotFound(JogadorNotFoundException ex) {
+        logger.error("Erro ao encontrar patrocinador: ", ex.getLocalizedMessage());
+        return ResponseEntity.notFound().build();
+    }
+
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<String> handleConstraintViolationException(ConstraintViolationException ex) {
         logger.error("Erro ao processar request: ", ex.getLocalizedMessage());
