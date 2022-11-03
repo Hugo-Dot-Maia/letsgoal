@@ -1,6 +1,8 @@
 package br.com.letscode.letsgoal.Controller;
 
 import br.com.letscode.letsgoal.Model.Escudo;
+import br.com.letscode.letsgoal.Service.EscudoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
@@ -9,19 +11,26 @@ import java.util.List;
 @RestController
 @RequestMapping("/escudos")
 public class EscudoController {
+    private final EscudoService escudoService;
+
+    @Autowired
+    public EscudoController(EscudoService escudoService) {
+        this.escudoService = escudoService;
+    }
+
     @GetMapping("/todosEscudos")
     public List<Escudo> findAll() {
-        return  Collections.emptyList();
+        return  escudoService.findAll();
     }
 
     @GetMapping("/{id}")
     public Escudo findById(@PathVariable Long id){
-        return null;
+        return escudoService.findById(id);
     }
 
     @PostMapping
     public Escudo saveEscudo(@RequestBody Escudo escudo){
-        return escudo;
+        return escudoService.saveEscudo(escudo);
     }
 
     @PutMapping("/{id}")

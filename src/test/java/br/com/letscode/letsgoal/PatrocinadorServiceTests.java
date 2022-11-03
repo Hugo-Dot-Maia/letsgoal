@@ -1,7 +1,6 @@
 package br.com.letscode.letsgoal;
 
 import Mock.MockPatrocinadores;
-import br.com.letscode.letsgoal.Model.Patrocinador.Patrocinador;
 import br.com.letscode.letsgoal.Repository.PatrocinadorRepository;
 import br.com.letscode.letsgoal.Service.PatrocinadorService;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,8 +16,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.Collections;
-import java.util.List;
 
 @DisplayName("Patrocinador Service Test")
 @ExtendWith(MockitoExtension.class)

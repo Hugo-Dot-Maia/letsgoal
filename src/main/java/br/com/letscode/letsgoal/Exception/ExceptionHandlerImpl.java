@@ -28,7 +28,13 @@ public class ExceptionHandlerImpl {
 
     @ExceptionHandler(JogadorNotFoundException.class)
     public ResponseEntity<String> handleJogadorNotFound(JogadorNotFoundException ex) {
-        logger.error("Erro ao encontrar patrocinador: ", ex.getLocalizedMessage());
+        logger.error("Erro ao encontrar Jogador: ", ex.getLocalizedMessage());
+        return ResponseEntity.notFound().build();
+    }
+
+    @ExceptionHandler(EscudoNotFoundException.class)
+    public ResponseEntity<String> handleEscudoNotFound(EscudoNotFoundException ex) {
+        logger.error("Erro ao encontrar escudo: ", ex.getLocalizedMessage());
         return ResponseEntity.notFound().build();
     }
 
