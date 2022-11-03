@@ -14,7 +14,6 @@ public class EscudoService implements IEscudoService {
 
     private final EscudoRepository escudoRepository;
 
-    @Autowired
     public EscudoService(EscudoRepository escudoRepository) {
         this.escudoRepository = escudoRepository;
     }
@@ -23,14 +22,12 @@ public class EscudoService implements IEscudoService {
         return escudoRepository.findAll();
     }
 
-    @Override
     public Escudo findById(Long id) {
         return escudoRepository
                 .findById(id)
                 .orElseThrow(EscudoNotFoundException::new);
     }
 
-    @Override
     public Escudo saveEscudo(Escudo escudo) {
         return escudoRepository.save(escudo);
     }

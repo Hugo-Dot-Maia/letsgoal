@@ -1,5 +1,6 @@
-package br.com.letscode.letsgoal.Model;
+package br.com.letscode.letsgoal.Model.Formacao;
 
+import br.com.letscode.letsgoal.Model.Posicao.Posicao;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

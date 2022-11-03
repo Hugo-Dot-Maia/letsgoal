@@ -48,11 +48,15 @@ public class ExceptionHandlerImpl {
         return ResponseEntity.notFound().build();
     }
 
+    @ExceptionHandler(FormacaoNotFoundException.class)
+    public ResponseEntity<String> handleFormacaoNotFound() {
+        logger.error("Erro ao encontrar posicao: ");
+        return ResponseEntity.notFound().build();
+    }
+
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<String> handleConstraintViolationException(ConstraintViolationException ex) {
         logger.error("Erro ao processar request: ", ex.getLocalizedMessage());
         return ResponseEntity.badRequest().body(ex.getMessage());
     }
-
-
 }

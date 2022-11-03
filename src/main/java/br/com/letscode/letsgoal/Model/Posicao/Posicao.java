@@ -1,4 +1,4 @@
-package br.com.letscode.letsgoal.Model;
+package br.com.letscode.letsgoal.Model.Posicao;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

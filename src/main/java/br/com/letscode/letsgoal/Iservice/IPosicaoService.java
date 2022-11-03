@@ -1,6 +1,6 @@
 package br.com.letscode.letsgoal.Iservice;
 
-import br.com.letscode.letsgoal.Model.Posicao;
+import br.com.letscode.letsgoal.Model.Posicao.Posicao;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package br.com.letscode.letsgoal.Service;
 
 import br.com.letscode.letsgoal.Exception.PosicaoNotFoundException;
 import br.com.letscode.letsgoal.Iservice.IPosicaoService;
-import br.com.letscode.letsgoal.Model.Posicao;
+import br.com.letscode.letsgoal.Model.Posicao.Posicao;
 import br.com.letscode.letsgoal.Repository.PosicaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
