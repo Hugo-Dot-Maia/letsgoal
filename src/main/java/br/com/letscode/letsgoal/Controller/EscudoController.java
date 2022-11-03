@@ -1,5 +1,6 @@
 package br.com.letscode.letsgoal.Controller;
 
+import br.com.letscode.letsgoal.Iservice.IEscudoService;
 import br.com.letscode.letsgoal.Model.Escudo.Escudo;
 import br.com.letscode.letsgoal.Service.EscudoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +11,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/escudos")
 public class EscudoController {
-    private final EscudoService escudoService;
+    private final IEscudoService escudoService;
 
     @Autowired
-    public EscudoController(EscudoService escudoService) {
+    public EscudoController(IEscudoService escudoService) {
         this.escudoService = escudoService;
     }
 

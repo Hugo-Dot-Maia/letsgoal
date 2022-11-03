@@ -42,6 +42,11 @@ public class ExceptionHandlerImpl {
         logger.error("Erro ao encontrar clube: ", ex.getLocalizedMessage());
         return ResponseEntity.notFound().build();
     }
+    @ExceptionHandler(PosicaoNotFoundException.class)
+    public ResponseEntity<String> handlePosicaoNotFound() {
+        logger.error("Erro ao encontrar posicao: ");
+        return ResponseEntity.notFound().build();
+    }
 
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<String> handleConstraintViolationException(ConstraintViolationException ex) {
