@@ -1,5 +1,6 @@
-package br.com.letscode.letsgoal.Model;
+package br.com.letscode.letsgoal.Model.Clube;
 
+import br.com.letscode.letsgoal.Model.Escudo.Escudo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

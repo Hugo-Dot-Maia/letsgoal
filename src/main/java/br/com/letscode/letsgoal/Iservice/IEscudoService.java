@@ -1,6 +1,6 @@
 package br.com.letscode.letsgoal.Iservice;
 
-import br.com.letscode.letsgoal.Model.Escudo;
+import br.com.letscode.letsgoal.Model.Escudo.Escudo;
 
 import java.util.List;
 

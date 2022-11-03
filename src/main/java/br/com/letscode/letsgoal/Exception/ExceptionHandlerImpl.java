@@ -37,6 +37,11 @@ public class ExceptionHandlerImpl {
         logger.error("Erro ao encontrar escudo: ", ex.getLocalizedMessage());
         return ResponseEntity.notFound().build();
     }
+    @ExceptionHandler(ClubeNotFoundException.class)
+    public ResponseEntity<String> handleClubeNotFound(ClubeNotFoundException ex) {
+        logger.error("Erro ao encontrar clube: ", ex.getLocalizedMessage());
+        return ResponseEntity.notFound().build();
+    }
 
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<String> handleConstraintViolationException(ConstraintViolationException ex) {

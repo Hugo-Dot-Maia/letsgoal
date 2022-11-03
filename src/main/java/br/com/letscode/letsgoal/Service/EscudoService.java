@@ -2,7 +2,7 @@ package br.com.letscode.letsgoal.Service;
 
 import br.com.letscode.letsgoal.Exception.EscudoNotFoundException;
 import br.com.letscode.letsgoal.Iservice.IEscudoService;
-import br.com.letscode.letsgoal.Model.Escudo;
+import br.com.letscode.letsgoal.Model.Escudo.Escudo;
 import br.com.letscode.letsgoal.Repository.EscudoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

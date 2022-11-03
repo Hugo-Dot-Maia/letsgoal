@@ -1,11 +1,10 @@
 package br.com.letscode.letsgoal.Controller;
 
-import br.com.letscode.letsgoal.Model.Escudo;
+import br.com.letscode.letsgoal.Model.Escudo.Escudo;
 import br.com.letscode.letsgoal.Service.EscudoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
 import java.util.List;
 
 @RestController
