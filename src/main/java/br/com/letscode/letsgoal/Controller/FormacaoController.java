@@ -6,6 +6,7 @@ import br.com.letscode.letsgoal.Model.Formacao.Formacao;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
 public class FormacaoController {
     private final IFormacaoService formacaoService;
 
+    @Autowired
     public FormacaoController(IFormacaoService formacaoService) {
         this.formacaoService = formacaoService;
     }
