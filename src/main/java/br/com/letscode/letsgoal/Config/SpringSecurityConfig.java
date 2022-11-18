@@ -40,15 +40,16 @@ public class SpringSecurityConfig {
                     .build();
     }
 
-    @Bean
-    public InMemoryUserDetailsManager userDetails(){
-        var user = User.builder()
-                                 .username("admin")
-                                 .password("123")
-                                 .roles("ADMIN")
-                                 .build();
-        return new InMemoryUserDetailsManager(user);
-    }
+//    @Bean
+//    public InMemoryUserDetailsManager userDetails(){
+//        var user = User.builder()
+//                                 .username("admin")
+//                                 .password("123")
+//                                 .roles("ADMIN")
+//                                 .build();
+//        return new InMemoryUserDetailsManager(user);
+//    }
+
 
     @Bean
     public PasswordEncoder passwordEncoder(){

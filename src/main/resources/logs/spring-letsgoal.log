@@ -1,149 +1,109 @@
-2022-10-28 22:13:35 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Starting LetsgoalApplication using Java 19 on HugoMaia with PID 19968 (C:\Users\Hugo\IdeaProjects\letsgoal\target\classes started by Hugo in C:\Users\Hugo\IdeaProjects\letsgoal)
-2022-10-28 22:13:35 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - No active profile set, falling back to 1 default profile: "default"
-2022-10-28 22:13:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-28 22:13:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-28 22:13:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-28 22:13:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
-2022-10-28 22:13:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2022-10-28 22:13:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-10-28 22:13:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-10-28 22:13:37 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-10-28 22:13:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1617 ms
-2022-10-28 22:13:37 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-28 22:13:37 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-10-28 22:13:37 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-28 22:13:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-10-28 22:13:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-10-28 22:13:38 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-10-28 22:13:38 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-28 22:13:39 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:13:39 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-28 22:13:39 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2022-10-28 22:13:39 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2022-10-28 22:13:39 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Started LetsgoalApplication in 4.768 seconds (JVM running for 6.004)
-2022-10-28 22:13:56 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-28 22:13:56 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-10-28 22:13:56 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2022-10-28 22:13:56 [http-nio-8081-exec-2] INFO  b.c.l.l.C.PatrocinadorController - Entrou no processo de obter todos os itens de filtro Patrocinadores
-2022-10-28 22:35:44 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:35:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-10-28 22:35:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-10-28 22:35:58 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Starting LetsgoalApplication using Java 19 on HugoMaia with PID 5704 (C:\Users\Hugo\IdeaProjects\letsgoal\target\classes started by Hugo in C:\Users\Hugo\IdeaProjects\letsgoal)
-2022-10-28 22:35:58 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - No active profile set, falling back to 1 default profile: "default"
-2022-10-28 22:35:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-28 22:35:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-28 22:35:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-28 22:35:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
-2022-10-28 22:36:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2022-10-28 22:36:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-10-28 22:36:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-10-28 22:36:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-10-28 22:36:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1871 ms
-2022-10-28 22:36:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-28 22:36:01 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-10-28 22:36:01 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-28 22:36:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-10-28 22:36:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-10-28 22:36:01 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-10-28 22:36:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-28 22:36:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:36:03 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-28 22:36:03 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2022-10-28 22:36:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2022-10-28 22:36:03 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Started LetsgoalApplication in 5.377 seconds (JVM running for 6.732)
-2022-10-28 22:36:18 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-28 22:36:18 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-10-28 22:36:18 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2022-10-28 22:37:00 [http-nio-8081-exec-3] INFO  b.c.l.l.C.PatrocinadorController - Entrou no processo de dar update em patrocinador
-2022-10-28 22:37:15 [http-nio-8081-exec-4] INFO  b.c.l.l.C.PatrocinadorController - Entrou no processo de obter patrocinador específico
-2022-10-28 22:37:20 [http-nio-8081-exec-5] INFO  b.c.l.l.C.PatrocinadorController - Entrou no processo de dar update em patrocinador
-2022-10-28 22:37:45 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:37:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-10-28 22:37:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-10-28 22:38:20 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Starting LetsgoalApplication using Java 19 on HugoMaia with PID 4248 (C:\Users\Hugo\IdeaProjects\letsgoal\target\classes started by Hugo in C:\Users\Hugo\IdeaProjects\letsgoal)
-2022-10-28 22:38:20 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - No active profile set, falling back to 1 default profile: "default"
-2022-10-28 22:38:20 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-28 22:38:20 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-28 22:38:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-28 22:38:22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
-2022-10-28 22:38:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2022-10-28 22:38:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-10-28 22:38:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-10-28 22:38:23 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-10-28 22:38:23 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2461 ms
-2022-10-28 22:38:23 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-28 22:38:23 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-10-28 22:38:23 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-28 22:38:24 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-10-28 22:38:24 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-10-28 22:38:24 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-10-28 22:38:25 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-28 22:38:25 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:38:26 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-28 22:38:27 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2022-10-28 22:38:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2022-10-28 22:38:27 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Started LetsgoalApplication in 7.301 seconds (JVM running for 10.09)
-2022-10-28 22:39:55 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-28 22:39:55 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-10-28 22:39:55 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2022-10-28 22:39:56 [http-nio-8081-exec-1] INFO  b.c.l.l.C.PatrocinadorController - Entrou no processo de dar update em patrocinador
-2022-10-28 22:43:41 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:43:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-10-28 22:43:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-10-28 22:43:50 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Starting LetsgoalApplication using Java 19 on HugoMaia with PID 10424 (C:\Users\Hugo\IdeaProjects\letsgoal\target\classes started by Hugo in C:\Users\Hugo\IdeaProjects\letsgoal)
-2022-10-28 22:43:50 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - No active profile set, falling back to 1 default profile: "default"
-2022-10-28 22:43:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-28 22:43:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-28 22:43:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-28 22:43:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
-2022-10-28 22:43:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2022-10-28 22:43:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-10-28 22:43:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-10-28 22:43:52 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-10-28 22:43:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1937 ms
-2022-10-28 22:43:52 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-28 22:43:52 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-10-28 22:43:53 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-28 22:43:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-10-28 22:43:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-10-28 22:43:53 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-10-28 22:43:54 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-28 22:43:54 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:43:54 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-28 22:43:55 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2022-10-28 22:43:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2022-10-28 22:43:55 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Started LetsgoalApplication in 5.002 seconds (JVM running for 6.1)
-2022-10-28 22:44:55 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:44:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-10-28 22:44:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2022-10-28 22:45:01 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Starting LetsgoalApplication using Java 19 on HugoMaia with PID 7660 (C:\Users\Hugo\IdeaProjects\letsgoal\target\classes started by Hugo in C:\Users\Hugo\IdeaProjects\letsgoal)
-2022-10-28 22:45:01 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - No active profile set, falling back to 1 default profile: "default"
-2022-10-28 22:45:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-28 22:45:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-28 22:45:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-28 22:45:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
-2022-10-28 22:45:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2022-10-28 22:45:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2022-10-28 22:45:02 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-10-28 22:45:02 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-10-28 22:45:02 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1608 ms
-2022-10-28 22:45:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-28 22:45:03 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-10-28 22:45:03 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-28 22:45:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2022-10-28 22:45:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-10-28 22:45:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-10-28 22:45:04 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-28 22:45:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:45:04 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-28 22:45:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2022-10-28 22:45:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2022-10-28 22:45:05 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Started LetsgoalApplication in 4.437 seconds (JVM running for 5.402)
-2022-10-28 22:45:16 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-28 22:45:16 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-10-28 22:45:16 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2022-10-28 22:45:16 [http-nio-8081-exec-1] INFO  b.c.l.l.C.PatrocinadorController - Entrou no processo de obter todos os patrocinadores
-2022-10-28 22:45:21 [http-nio-8081-exec-3] INFO  b.c.l.l.C.PatrocinadorController - Entrou no processo de obter todos os itens de filtro Patrocinadores
-2022-10-28 22:45:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-28 22:45:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2022-10-28 22:45:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-11-09 13:42:04 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Starting LetsgoalApplication using Java 19 on HugoMaia with PID 13184 (C:\Users\Hugo\IdeaProjects\letsgoal\target\classes started by Hugo in C:\Users\Hugo\IdeaProjects\letsgoal)
+2022-11-09 13:42:04 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-09 13:42:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-09 13:42:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-09 13:42:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-09 13:42:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 8 JPA repository interfaces.
+2022-11-09 13:42:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-11-09 13:42:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-09 13:42:07 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-09 13:42:07 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-09 13:42:07 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3091 ms
+2022-11-09 13:42:07 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-09 13:42:07 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-09 13:42:08 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-09 13:42:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-11-09 13:42:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-11-09 13:42:08 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-11-09 13:42:09 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-09 13:42:09 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-09 13:42:10 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@582f00c9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3debcf94, org.springframework.security.web.context.SecurityContextPersistenceFilter@7551175, org.springframework.security.web.header.HeaderWriterFilter@5c531b64, org.springframework.security.web.authentication.logout.LogoutFilter@213911fb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1cc9dad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@709a4ae7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ac5d5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7906ee10, org.springframework.security.web.session.SessionManagementFilter@2a7d2513, org.springframework.security.web.access.ExceptionTranslationFilter@62b96f4b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bf34253]
+2022-11-09 13:42:10 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-09 13:42:10 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/images/**']
+2022-11-09 13:42:10 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-09 13:42:10 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/js/**']
+2022-11-09 13:42:10 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-09 13:42:10 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-11-09 13:42:10 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-09 13:42:10 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-11-09 13:42:10 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-09 13:42:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_1
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_2
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_2
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_3
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_3
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateClubeUsingPUT_1
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_4
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_4
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_5
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_5
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_6
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_6
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_7
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_7
+2022-11-09 13:42:11 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_8
+2022-11-09 13:42:11 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Started LetsgoalApplication in 7.534 seconds (JVM running for 8.603)
+2022-11-09 13:42:11 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-09 13:42:11 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-11-09 13:42:11 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-11-09 13:52:00 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-09 13:52:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-11-09 13:52:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-11-09 13:53:56 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Starting LetsgoalApplication using Java 19 on HugoMaia with PID 17532 (C:\Users\Hugo\IdeaProjects\letsgoal\target\classes started by Hugo in C:\Users\Hugo\IdeaProjects\letsgoal)
+2022-11-09 13:53:56 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-09 13:53:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-09 13:53:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-09 13:53:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-09 13:53:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 8 JPA repository interfaces.
+2022-11-09 13:53:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-11-09 13:53:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-09 13:53:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-09 13:53:58 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-09 13:53:58 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1580 ms
+2022-11-09 13:53:58 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-09 13:53:58 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-09 13:53:58 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-09 13:53:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-11-09 13:53:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-11-09 13:53:58 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-11-09 13:53:59 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-09 13:53:59 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-09 13:54:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c53c1f7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50a048c3, org.springframework.security.web.context.SecurityContextPersistenceFilter@176f8a4b, org.springframework.security.web.header.HeaderWriterFilter@188803b2, org.springframework.security.web.authentication.logout.LogoutFilter@bc6f2e2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7b52f9bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@334569e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@571ef141, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41631dc7, org.springframework.security.web.session.SessionManagementFilter@27b8be2e, org.springframework.security.web.access.ExceptionTranslationFilter@150eef5b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3458bee8]
+2022-11-09 13:54:01 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-09 13:54:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/images/**']
+2022-11-09 13:54:01 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-09 13:54:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/js/**']
+2022-11-09 13:54:01 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-09 13:54:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/webjars/**']
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-09 13:54:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-11-09 13:54:01 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-09 13:54:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_1
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_2
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_2
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_3
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_3
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateClubeUsingPUT_1
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_4
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_4
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_5
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_5
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_6
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_6
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_7
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_7
+2022-11-09 13:54:01 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_8
+2022-11-09 13:54:01 [restartedMain] INFO  b.c.l.letsgoal.LetsgoalApplication - Started LetsgoalApplication in 5.813 seconds (JVM running for 6.642)
+2022-11-09 14:07:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-09 14:07:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-11-09 14:07:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
