@@ -5,6 +5,7 @@ import br.com.letscode.letsgoal.Iservice.IPatrocinadorService;
 import br.com.letscode.letsgoal.Model.Patrocinador.Patrocinador;
 import br.com.letscode.letsgoal.Model.Patrocinador.PatrocinadorFiltro;
 import br.com.letscode.letsgoal.Repository.PatrocinadorRepository;
+import br.com.letscode.letsgoal.Utils.CollectionUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +24,10 @@ public class PatrocinadorService implements IPatrocinadorService {
         return patrocinadorRepository.save(patrocinador);
     }
     public List<Patrocinador> findAll(){
-        return patrocinadorRepository.findAll();
+        return CollectionUtils
+                .makeCollectionFromIterable(patrocinadorRepository.findAll())
+                .stream()
+                .toList();
     }
 
     public Patrocinador findById(Long id){
@@ -33,8 +37,8 @@ public class PatrocinadorService implements IPatrocinadorService {
     }
 
     public List<PatrocinadorFiltro> fildAllPatrocinadorFiltro() {
-        return patrocinadorRepository
-                .findAll()
+        return CollectionUtils
+                .makeCollectionFromIterable(patrocinadorRepository.findAll())
                 .stream()
                 .map(p -> new PatrocinadorFiltro(p.getID(), p.getNome()))
                 .toList();

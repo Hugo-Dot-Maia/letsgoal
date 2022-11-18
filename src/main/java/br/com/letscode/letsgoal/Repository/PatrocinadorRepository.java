@@ -1,7 +1,7 @@
 package br.com.letscode.letsgoal.Repository;
 
 import br.com.letscode.letsgoal.Model.Patrocinador.Patrocinador;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface PatrocinadorRepository extends JpaRepository<Patrocinador, Long> {
+public interface PatrocinadorRepository extends CrudRepository<Patrocinador, Long> {
 }
