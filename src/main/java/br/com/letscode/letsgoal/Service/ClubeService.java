@@ -31,6 +31,13 @@ public class ClubeService implements IClubeService {
     }
 
     @Override
+    public Clube findByAbreviacao(String abreviacao) {
+        return clubeRepository
+                .findByAbreviacao(abreviacao)
+                .orElseThrow(RuntimeException::new);
+    }
+
+    @Override
     public Clube saveClube(Clube clube) {
         return clubeRepository.save(clube);
     }
