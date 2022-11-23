@@ -1,5 +1,6 @@
 package br.com.letscode.letsgoal.Service;
 
+import br.com.letscode.letsgoal.Exception.ClubeExistenteException;
 import br.com.letscode.letsgoal.Iservice.IClubeService;
 import br.com.letscode.letsgoal.Model.Clube.Clube;
 import br.com.letscode.letsgoal.Repository.ClubeRepository;
@@ -39,6 +40,9 @@ public class ClubeService implements IClubeService {
 
     @Override
     public Clube saveClube(Clube clube) {
+        var optionalClube = clubeRepository.findByAbreviacao( clube.getAbreviacao());
+        optionalClube.ifPresent(obj -> { throw new ClubeExistenteException(); });
+
         return clubeRepository.save(clube);
     }
 }

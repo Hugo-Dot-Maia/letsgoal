@@ -23,17 +23,17 @@ public class ClubeController {
     }
 
     @GetMapping("/todosClubes")
-    public List<Clube> findAll() {
-        return  clubeService.findAll();
+    public ResponseEntity<List<Clube>> findAll() {
+        return ResponseEntity.ok().body(clubeService.findAll());
     }
 
     @GetMapping("/{id}")
-    public Clube findById(@PathVariable Long id){
-        return clubeService.findById(id);
+    public ResponseEntity<Clube> findById(@PathVariable Long id){
+        return  ResponseEntity.ok().body(clubeService.findById(id));
     }
     @GetMapping("/abreviacao/{abreviacao}")
-    public Clube findByName(@PathVariable String abreviacao){
-        return clubeService.findByAbreviacao(abreviacao);
+    public ResponseEntity<Clube> findByName(@PathVariable String abreviacao){
+        return  ResponseEntity.ok().body(clubeService.findByAbreviacao(abreviacao));
     }
 
     //TODO Aplicar DTO

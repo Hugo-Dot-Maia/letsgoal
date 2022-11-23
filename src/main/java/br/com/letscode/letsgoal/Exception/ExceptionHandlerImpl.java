@@ -40,6 +40,11 @@ public class ExceptionHandlerImpl {
         log.error("Erro ao encontrar clube: ", ex.getLocalizedMessage());
         return ResponseEntity.notFound().build();
     }
+    @ExceptionHandler(ClubeExistenteException.class)
+    public ResponseEntity<String> handleClubeExistente(ClubeExistenteException ex) {
+        log.error("Erro ao encontrar clube: ", ex.getLocalizedMessage());
+        return ResponseEntity.notFound().build();
+    }
     @ExceptionHandler(PosicaoNotFoundException.class)
     public ResponseEntity<String> handlePosicaoNotFound() {
         log.error("Erro ao encontrar posicao: ");
