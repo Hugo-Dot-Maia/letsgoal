@@ -8,4 +8,5 @@ public interface IPosicaoService {
     List<Posicao> findAll();
     Posicao findById(Long id);
     Posicao savePosicao(Posicao posicao);
+    List<Posicao> saveTodasPosicoes(List<Posicao> posicoes);
 }

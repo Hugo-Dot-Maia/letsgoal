@@ -11,9 +11,13 @@ import javax.persistence.Id;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class Posicao {
+public class Posicao implements Comparable<Posicao>{
     @Id
     private Long ID;
     private String nome;
     private String abreviacao;
+    @Override
+    public int compareTo(Posicao posicao){
+        return this.getID().compareTo(posicao.getID());
+    }
 }

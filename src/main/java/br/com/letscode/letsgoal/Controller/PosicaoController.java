@@ -33,4 +33,9 @@ public class PosicaoController {
         return  posicaoService.savePosicao(posicao);
     }
 
+    @PostMapping("insertAllPosicoes")
+    public List<Posicao> saveTodasPosicoes(@RequestBody List<Posicao> posicoes){
+        return  posicaoService.saveTodasPosicoes(posicoes);
+    }
+
 }

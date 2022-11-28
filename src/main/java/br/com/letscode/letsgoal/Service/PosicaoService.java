@@ -7,6 +7,8 @@ import br.com.letscode.letsgoal.Repository.PosicaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -20,7 +22,9 @@ public class PosicaoService implements IPosicaoService {
 
 
     public List<Posicao> findAll() {
-        return posicaoRepository.findAll();
+        List<Posicao> posicoes = posicaoRepository.findAll();
+        Collections.sort(posicoes);
+        return posicoes;
     }
 
     public Posicao findById(Long id) {
@@ -31,5 +35,18 @@ public class PosicaoService implements IPosicaoService {
 
     public Posicao savePosicao(Posicao posicao) {
         return posicaoRepository.save(posicao);
+    }
+
+    @Override
+    public List<Posicao> saveTodasPosicoes(List<Posicao> posicoes) {
+        List<Posicao> posicoesSalvas = posicaoRepository.findAll();
+        List<Posicao> novasPosicoes = new ArrayList<>(Collections.emptyList());
+        posicoes.forEach(posicao -> {
+            if(!posicoesSalvas.contains(posicao)){
+                posicaoRepository.save(posicao);
+                novasPosicoes.add(posicao);
+            }
+        });
+        return novasPosicoes;
     }
 }
